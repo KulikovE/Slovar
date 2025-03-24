@@ -196,3 +196,42 @@ public class DictionaryApp {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private static void selectDictionary(Scanner scanner) {
+        System.out.println("Выберите словарь:");
+        System.out.println("1. Язык 1 (4 латинских символа)");
+        System.out.println("2. Язык 2 (5 цифр)");
+
+        int dictChoice = scanner.nextInt();
+        scanner.nextLine(); // consume newline
+
+        if (dictChoice == 1) {
+            currentDictionary = language1Dictionary;
+            currentDictionaryName = "Язык 1 (4 латинских символа)";
+        } else if (dictChoice == 2) {
+            currentDictionary = language2Dictionary;
+            currentDictionaryName = "Язык 2 (5 цифр)";
+        } else {
+            System.out.println("Неверный выбор. По умолчанию выбран словарь языка 1.");
+            currentDictionary = language1Dictionary;
+            currentDictionaryName = "Язык 1 (4 латинских символа)";
+        }
+    }

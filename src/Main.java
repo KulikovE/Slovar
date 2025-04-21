@@ -14,7 +14,7 @@ public class Main {
 
         while (true) {
             System.out.println("\nТекущий выбранный словарь: " + currentDictionaryName);
-            System.out.println("Выберите действие:");
+            System.out.println("Выберите действие: ");
             System.out.println("1. Просмотреть содержимое словаря");
             System.out.println("2. Удалить запись");
             System.out.println("3. Найти запись по ключу");
